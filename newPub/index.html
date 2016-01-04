@@ -13,9 +13,12 @@
     <script src="scripts/ai.0.15.0-build58334.js"></script>
     <script src="scripts/bootstrap.js"></script>
     <script type="text/javascript">
-        var php_var = "<?php getenv('SENDGRID-APIKEY') ?>";
-        document.getElementById('h1').innerHTML = "API " + php_var;
-        alert(php_var + "<");
+        var apikey = process.env.SENDGRID - APIKEY;
+        document.getElementById('h1').innerHTML = "API " + apikey;
+        alert(apikey + "<");
+        //var php_var = "<?php getenv('SENDGRID-APIKEY') ?>";
+        //document.getElementById('h1').innerHTML = "API " + php_var;
+        //alert(php_var + "<");
     </script>
 </body>
 </html>
