@@ -8,9 +8,13 @@
     <link href="images/main.css" rel="stylesheet" />
 </head>
 <body>
-    Hello World!scsboot
+    <h1 id="h1">API</h1>
     <script src="scripts/jquery-1.9.1.js"></script>
     <script src="scripts/ai.0.15.0-build58334.js"></script>
     <script src="scripts/bootstrap.js"></script>
+    <script type="text/javascript">
+        var php_var = "<?php getenv('SENDGRID-APIKEY') ?>";
+        document.getElementById('h1').innerHTML = "API " + php_var;
+    </script>
 </body>
 </html>
